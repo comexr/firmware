@@ -1,0 +1,76 @@
+Package: coreboot-updater
+Version: 0.0.1
+Architecture: amd64
+Maintainer: Laurens Bruins <l.bruins@laptopwithlinux.com>
+Depends: libc6
+Filename: pool/main/coreboot-updater_0.0.1-1_amd64.deb
+Size: 27910296
+MD5sum: f2ce675ced9753df63233d9db4ed3e45
+SHA1: 69f5f35a0f7b32030b324943d80489358d1f8fd6
+SHA256: b93afff45150965828819c661e082e238b772cc1ad1317aba069e69e77c27607
+Homepage: http://laptopwithlinux.com/
+Description: A Coreboot update tool
+
+Package: coreboot-updater
+Version: 0.0.2
+Architecture: amd64
+Maintainer: Laurens Bruins <l.bruins@laptopwithlinux.com>
+Depends: libc6, dmidecode
+Filename: pool/main/coreboot-updater_0.0.2-1_amd64.deb
+Size: 27914948
+MD5sum: 7dfa62d03dffd1d90414a7b3d15d4a06
+SHA1: 323168580fc0b379b31ba7a424db22ce19e948c6
+SHA256: f5472ce0a2a1f005718b73c25b0250b3516064d6d2f950bfbfcdbf2426a490be
+Homepage: http://laptopwithlinux.com/
+Description: A Coreboot update tool
+
+Package: coreboot-updater
+Version: 0.0.3
+Architecture: amd64
+Maintainer: Laurens Bruins <l.bruins@laptopwithlinux.com>
+Depends: libc6, dmidecode
+Filename: pool/main/coreboot-updater_0.0.3-1_amd64.deb
+Size: 27915816
+MD5sum: 55c03f61ddb4c302e53b80f588a43ffd
+SHA1: 1c0cfab7d38a61598d60ed824a9606ecd71df88a
+SHA256: 31e81bf692d0a9a0e3d8cacedbd338dfdf3e3d7e56e817100561018d9391c28b
+Homepage: http://laptopwithlinux.com/
+Description: A Coreboot update tool
+
+Package: cyrex-control-center
+Version: 1.0.15-0ubuntu1
+Architecture: all
+Maintainer: Alexandru Balan <alex@pearos.xyz>
+Installed-Size: 897
+Depends: gambas3-runtime (>= 3.14), gambas3-runtime (<< 3.99.0), gambas3-gb-image (>= 3.14), gambas3-gb-image (<< 3.99.0), gambas3-gb-gtk3 (>= 3.14), gambas3-gb-gtk3 (<< 3.99.0), gambas3-gb-form (>= 3.14), gambas3-gb-form (<< 3.99.0)
+Filename: pool/main/cyrex-control-center_1.0.15-0ubuntu1_amd64.deb
+Size: 923392
+MD5sum: 072eb3fd35e968714376c5e2d05871d1
+SHA1: 17f36f9bc4b63d3c30f1223eb06801bb4adf2e91
+SHA256: ba22050d9dbf9749395fdbda3571792f4e16fbf8ea97ebaf3ecb5701b1811e83
+Section: contrib/utils
+Priority: optional
+Description: It lets you change colors of your RGB keyboard.
+ It lets you change colors of your RGB keyboard. You need Tuxedo driver in order
+ to make this work
+ This program is written in Gambas.
+
+Package: tuxedo-keyboard
+Version: 3.0.8
+Architecture: all
+Maintainer: TUXEDO Computers GmbH <tux@tuxedocomputers.com>
+Depends: dkms (>= 1.95)
+Conflicts: tuxedo-keyboard-dkms (<= 2.0.0), tuxedo-wmi-dkms (<= 1.5.1), tuxedo-xp-xc-touchpad-key-fix, tuxedo-touchpad-fix (<= 1.0.8), tuxedo-xp-xc-airplane-mode-fix (<= 0.6), tuxedo-cc-wmi
+Replaces: tuxedo-keyboard-dkms (<= 2.0.0), tuxedo-wmi-dkms (<= 1.5.1), tuxedo-xp-xc-touchpad-key-fix, tuxedo-touchpad-fix (<= 1.0.8), tuxedo-xp-xc-airplane-mode-fix (<= 0.6), tuxedo-cc-wmi
+Filename: pool/main/tuxedo-keyboard-3.0.8.deb
+Size: 60788
+MD5sum: 7e3a49db2d7679f66017336e4bde3777
+SHA1: c095c1f9484349816701eeaca359cecb9acb766b
+SHA256: 5d44c0ae73e4ea4e0e273cebf25d931b9d045a812bce5fc1b0f888b87ff282b1
+Section: admin
+Priority: optional
+Homepage: https://www.tuxedocomputers.com
+Description: Keyboard driver for TUXEDO notebooks.
+ Keyboard & keyboard backlight driver for TUXEDO notebooks.
+ Meant for DKMS framework.
+

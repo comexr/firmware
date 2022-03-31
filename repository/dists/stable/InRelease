@@ -1,0 +1,44 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: Laptop With Linux
+Label: LWL
+Suite: stable
+Codename: stable
+Version: 1.0
+Architectures: amd64 
+Components: main
+Description: Official Laptop with Linux repository
+Date: Thu, 31 Mar 2022 14:52:38 +0000
+MD5Sum:
+ 8cf03246205ca130c555c1945aaaf588 1253 main/binary-amd64/Packages.gz
+ 5e38250f42d4d84abf1e45579c825024 3151 main/binary-amd64/Packages
+ 929d184147c074604d6b400f5812c289 2016 InRelease
+ 48866b5bbc8363d1567d76cdb9ae7c9a 874 Release.gpg
+SHA1:
+ 5687d14e121c8abcb299283a8a1b18fd30ce3912 1253 main/binary-amd64/Packages.gz
+ e7819754e98f1ae61ac4debf0a7533416553e6d3 3151 main/binary-amd64/Packages
+ 618016a5099a7fcfc5581855e2e68656ed81b407 2016 InRelease
+ 87ff42b8dc1947175f8b2daa6b07af30ed5aa722 874 Release.gpg
+SHA256:
+ 1ad260e2c3b9760a239491a00810e7be424d4a6e2c7b051b8690d105a79261fe 1253 main/binary-amd64/Packages.gz
+ 149ee6fd2e6469d5e56ed4213231220d5278facee6246d2c9654265c2c00f010 3151 main/binary-amd64/Packages
+ fe3cba9208cf20b43b06c75098ea1f9827108b42ed41877d075192db69005e43 2016 InRelease
+ 81139acba636ea34e0d05e296d42389525af79cfad9032945fbad65b15433f93 874 Release.gpg
+-----BEGIN PGP SIGNATURE-----
+
+iQJRBAEBCgA7FiEEyNsG52nP3+9GOVt5TtHTU5E9aTIFAmJFwDYdHGwuYnJ1aW5z
+QGxhcHRvcHdpdGhsaW51eC5jb20ACgkQTtHTU5E9aTL+PhAAsxE6He0C/LlISylH
+rubqHbHctpzYmbszvfk2m2qIs8LxpudQkL1drEi2xr172lmv0Qjv5FKcKwVloz4R
+L48BUwnwxh+nM5gOSF8ioskvIKQaU+IVLeEBTQWHV4YG1qVRhnyk1qmbEHDSoJbw
++uKxQgmIVYjn5bYXMU9r21FXEmY0W5j3e6rUZz5cir9uEs4sLyx673f9YVO+yvjm
+6AO2LEQ3ednzwJSglaWtOY7N4gfTThk7ZTV0WyKKcln5UxtC2SKRuzmnHZ70Y+ix
+24tU0+3squjnL2EiTe3OUOtFz9mzom2gEQ0W6ykCjDExCA6cRzb6bmTdGG7KEtpQ
+wCcRTGmu3VmaN2Amz/MBybZuzXVmTrth5IwjPHTV5MmWJBpHpXM/1q2n43CbBa8h
+zjcGZRsnn8ua6SeUSs40+fiyuchuzVwwVuGTnRoA4kR6pnoiDjJOar9kJrnsl5eO
+1CalEoV/g9jj/ec98WPz3jPBtMXCQAn1MdI0jQ2arCpCinl+XRTn2RhuOrWInKCk
+VsFwUaG6o8jYDcHmRIMwxZI0Hm2YZRT0NS7BIg3tYMyT+milnk2lNAeaD7DOvXFZ
+bGxXNCJrKgGJmvARsVKdKLQL5PL03DHUYISS7mBIQD96CLkSqkJk43ZffJdSfthn
+yg97rYpFRhuI1Z8O8mGiZK67MvM=
+=5nZN
+-----END PGP SIGNATURE-----

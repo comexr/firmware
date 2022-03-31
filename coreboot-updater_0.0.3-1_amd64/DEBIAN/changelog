@@ -1,0 +1,7 @@
+coreboot-updater (0.0.3-1) stable; urgency=low
+
+   * Initial Release. Closes: #1
+   * Added postinst for autoinstall on upgrade
+   * Changed postinst code to point to right folder in /usr/share/ -> /usr/share/coreboot-updater/
+
+  -- Laurens Bruins <l.bruins@laptopwithlinux.com>  Thu, 31 Mar 2022 10:00:43 +0100

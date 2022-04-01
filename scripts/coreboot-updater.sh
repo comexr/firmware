@@ -34,24 +34,24 @@ while test $# -gt 0; do
       	;;
     -u|--update)
       	echo "starting update..."
-	break
+	wget -O /usr/share/coreboot-updater/firmware_"$DMI_MODEL".rom https://github.com/comexr/firmware/raw/main/models/"$DMI_MODEL"/firmware.rom &>/dev/null
+	[ $? -ne 0 ] && (echo "Something went wrong, aborting"; exit 1)
+
+	#Check if AC adapter is connected
+	if [ "$(cat /sys/class/power_supply/BAT0/status)" == "Discharging" ]; then
+   		echo "Please connect your AC adapter before attempting a firmware update"
+   		exit 1
+	fi
+
+	sudo chmod +x /usr/share/coreboot-updater/libs/intel-spi/target/release/intel-spi
+	sudo /usr/share/coreboot-updater/libs/intel-spi/target/release/intel-spi "/usr/share/coreboot-updater/firmware_$DMI_MODEL.rom"
       	;;
     *)
       	break
       	;;
   esac
 done
+exit 0
 
-wget -O /usr/share/coreboot-updater/firmware_"$DMI_MODEL".rom https://github.com/comexr/firmware/raw/main/models/"$DMI_MODEL"/firmware.rom &>/dev/null
-[ $? -ne 0 ] && (echo "Something went wrong, aborting"; exit 1)
 
-#Check if AC adapter is connected
-if [ "$(cat /sys/class/power_supply/BAT0/status)" == "Discharging" ]
-then
-   echo "Please connect your AC adapter before attempting a firmware update"
-   exit 1
-fi
-
-sudo chmod +x /usr/share/coreboot-updater/libs/intel-spi/target/release/intel-spi
-sudo /usr/share/coreboot-updater/libs/intel-spi/target/release/intel-spi "/usr/share/coreboot-updater/firmware_$DMI_MODEL.rom"
 

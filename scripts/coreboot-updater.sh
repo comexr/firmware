@@ -15,10 +15,8 @@ if [[ $# -eq 0 ]]; then
     echo ""
     echo "When no flags are passed, this help message will be displayed"
     exit 0
-fi
-
-while test $# -gt 0; do
-  case "$1" in
+else
+    case "$1" in
     -h|--help)
     	echo "This utility is used to update Laptop with Linux coreboot Firmware"
     	echo "Please only use this utility when coreboot is already installed on your machine."
@@ -35,10 +33,12 @@ while test $# -gt 0; do
     -u|--update)
       	echo "starting update..."
       	sudo apt install cargo -y
+      	rustup install nightly
       	cd /usr/share/coreboot-updater/libs/uefi/
       	cargo build
       	cd ../intel-spi
-      	cargp build
+      	cargo build
+      	cargo install --path .
 	wget -O /usr/share/coreboot-updater/firmware_"$DMI_MODEL".rom https://github.com/comexr/firmware/raw/main/models/"$DMI_MODEL"/firmware.rom &>/dev/null
 	[ $? -ne 0 ] && (echo "Something went wrong, aborting"; exit 1)
 
@@ -50,12 +50,14 @@ while test $# -gt 0; do
 	
 	sudo chmod +x /usr/share/coreboot-updater/libs/intel-spi/target/release/intel-spi
 	sudo /usr/share/coreboot-updater/libs/intel-spi/target/release/intel-spi "/usr/share/coreboot-updater/firmware_$DMI_MODEL.rom"
+	exit 0
       	;;
     *)
       	break
       	;;
   esac
-done
+fi
+
 exit 0
 
 

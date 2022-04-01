@@ -34,6 +34,7 @@ while test $# -gt 0; do
       	;;
     -u|--update)
       	echo "starting update..."
+	break
       	;;
     *)
       	break

@@ -1,0 +1,25 @@
+[package]
+name = "orbtk"
+version = "0.2.28"
+authors = ["Jeremy Soller <jackpot51@gmail.com>"]
+description = "The Orbital Widget Toolkit"
+documentation = "https://docs.rs/orbtk"
+repository = "https://github.com/redox-os/orbtk"
+readme = "README.md"
+license = "MIT"
+keywords = [
+    "orbital",
+    "redox",
+    "ui",
+]
+
+[lib]
+name = "orbtk"
+path = "src/lib.rs"
+
+[dependencies]
+orbclient = "0.3.13"
+orbfont = "0.1.8"
+orbimage = "0.1.16"
+cssparser = "0.16.0"
+lazy_static = "0.2.8"

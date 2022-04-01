@@ -11,3 +11,16 @@ SHA256: f2baf114128296e81f7d9cdf21dd9f7db74e10cf5628022bceddcd1c36f064f2
 Homepage: http://laptopwithlinux.com/
 Description: A Coreboot update tool
 
+Package: coreboot-updater
+Version: 0.0.5
+Architecture: amd64
+Maintainer: Laurens Bruins <l.bruins@laptopwithlinux.com>
+Depends: libc6, dmidecode
+Filename: pool/testing/coreboot-updater_0.0.5-1_amd64.deb
+Size: 1451464
+MD5sum: 3d805582421e054cde6e60b81223c338
+SHA1: 8b2624709ce65f3c5a44c5ebe0cd6b769484655e
+SHA256: b7cb18f1dff7a4a073e67e482539176aeac315bead0ac7116b26a3c462b7ba90
+Homepage: http://laptopwithlinux.com/
+Description: A Coreboot update tool
+

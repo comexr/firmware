@@ -43,10 +43,10 @@ Architecture: amd64
 Maintainer: Laurens Bruins <l.bruins@laptopwithlinux.com>
 Depends: libc6, dmidecode
 Filename: pool/testing/coreboot-updater_0.0.9-1_amd64.deb
-Size: 91268
-MD5sum: 7487a9ca3c227e2b6700aefe52c672f7
-SHA1: 334e2ae8c06f1bdc15d820099f199fdcd35ed753
-SHA256: e84dd5c8ee03326ae665a6d0b04107637da7bd0614cc19c12aa20356456e1d72
+Size: 91676
+MD5sum: 4ed7250399f960f29b72045cb7c143c8
+SHA1: 073f839966355327c0a580addb2f5e2de32506ef
+SHA256: 370e9aa8b19d6e82f4f82280d4b0b7ef5e173a1e8c614e42814c5e5d39fb5efe
 Homepage: http://laptopwithlinux.com/
 Description: A Coreboot update tool
 

@@ -1,0 +1,7 @@
+Package: coreboot-updater
+Version: 0.0.9
+Maintainer: Laurens Bruins <l.bruins@laptopwithlinux.com>
+Depends: libc6, dmidecode
+Architecture: amd64
+Homepage: http://laptopwithlinux.com/
+Description: A Coreboot update tool

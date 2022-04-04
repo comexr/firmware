@@ -1,52 +1,13 @@
 Package: coreboot-updater
-Version: 0.0.6
-Architecture: amd64
-Maintainer: Laurens Bruins <l.bruins@laptopwithlinux.com>
-Depends: libc6, dmidecode
-Filename: pool/testing/coreboot-updater_0.0.6-1_amd64.deb
-Size: 5336628
-MD5sum: ac50bbb3fb67c4ec7282d3ee498aea0a
-SHA1: 4b7a1d855ac1e77ea5e19e7ea36d6a984f7f7999
-SHA256: 3e9d3b11673248c4f8a799cb432f9ba12a183f38f406fbd3b9dba009c3676e79
-Homepage: http://laptopwithlinux.com/
-Description: A Coreboot update tool
-
-Package: coreboot-updater
-Version: 0.0.7
-Architecture: amd64
-Maintainer: Laurens Bruins <l.bruins@laptopwithlinux.com>
-Depends: libc6, dmidecode
-Filename: pool/testing/coreboot-updater_0.0.7-1_amd64.deb
-Size: 6429816
-MD5sum: 60bc4a9aca699d7cbf12b5c661ceb1dc
-SHA1: b2e6773118260be48534bc6eaf20c403b2c3526f
-SHA256: d3a2afe25e7e8648e45548a20a166857f21ad7b763bf9796ee92dc9a24058fbf
-Homepage: http://laptopwithlinux.com/
-Description: A Coreboot update tool
-
-Package: coreboot-updater
-Version: 0.0.8
-Architecture: amd64
-Maintainer: Laurens Bruins <l.bruins@laptopwithlinux.com>
-Depends: libc6, dmidecode
-Filename: pool/testing/coreboot-updater_0.0.8_amd64.deb
-Size: 91280
-MD5sum: 368a258b19c6ac8a2960136522cf58cf
-SHA1: 3c1c07195413ab71a9045349dc4623b9a0f3c3fc
-SHA256: 17d4b68e2f7b21e1fac4a702016838634234657a65e85f8db5692b63477e7dfc
-Homepage: http://laptopwithlinux.com/
-Description: A Coreboot update tool
-
-Package: coreboot-updater
 Version: 0.0.9
 Architecture: amd64
 Maintainer: Laurens Bruins <l.bruins@laptopwithlinux.com>
-Depends: libc6, dmidecode
+Depends: libc6, dmidecode, cargo
 Filename: pool/testing/coreboot-updater_0.0.9-1_amd64.deb
-Size: 91676
-MD5sum: 4ed7250399f960f29b72045cb7c143c8
-SHA1: 073f839966355327c0a580addb2f5e2de32506ef
-SHA256: 370e9aa8b19d6e82f4f82280d4b0b7ef5e173a1e8c614e42814c5e5d39fb5efe
+Size: 91164
+MD5sum: 3d2b7e9dc9073cacddb744ca04880139
+SHA1: b36dc218ce6d8b310c786eafebf9a2b338278ef1
+SHA256: 6e772917f4169021c49c0bfa43e6f1d224ba35b6b683c440b6391757457c7518
 Homepage: http://laptopwithlinux.com/
 Description: A Coreboot update tool
 

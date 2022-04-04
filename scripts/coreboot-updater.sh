@@ -32,7 +32,6 @@ else
       	;;
     -u|--update)
       	echo "starting update..."
-      	sudo apt install cargo -y &>/dev/null || { echo "Apt failed to install package, check your internet connection and try again"; exit 1; }
       	rustup install nightly &>/dev/null || { echo "Couldn't install rustup nightly, stopping script"; exit 1; }
       	cd /usr/share/coreboot-updater/libs/uefi/
       	cargo build &>/dev/null || { echo "Couldn't build uefi crate, stopping script"; exit 1; }

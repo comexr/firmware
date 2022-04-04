@@ -39,7 +39,7 @@ else
       	cd ../intel-spi
       	cargo build &>/dev/null || { echo "Couldn't build intel-spi crate, stopping script"; exit 1; }
       	cargo install --path . &>/dev/null || { echo -e "Couldn't install crates, please try again.\nStopping script"; exit 1; }
-	    wget -O /tmp/firmware_$DMI_MODEL.rom https://github.com/comexr/firmware/raw/main/models/"$DMI_MODEL"/firmware.rom &>/dev/null || { echo "Model not found, please contact support"; exit 1; }
+	    wget -O /tmp/firmware_$DMI_MODEL.rom https://github.com/comexr/firmware/raw/main/models/"$DMI_MODEL"/firmware.rom &>/dev/null || { echo "Model not found, please contact support"; rm /tmp/firmware_$DMI_MODEL.rom; exit 1; }
 	    [ $? -ne 0 ] && { echo "Something went wrong, aborting"; exit 1; }
 	    diff /tmp/firmware_$DMI_MODEL.rom /usr/share/coreboot-updater/libs/firmware_$DMI_MODEL.rom
 	    if [ $? -eq 0 ]; then

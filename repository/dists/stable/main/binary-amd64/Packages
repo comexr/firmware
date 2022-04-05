@@ -1,0 +1,19 @@
+Package: tuxedo-keyboard
+Version: 3.0.9
+Architecture: all
+Maintainer: TUXEDO Computers GmbH <tux@tuxedocomputers.com>
+Depends: dkms (>= 1.95)
+Conflicts: tuxedo-keyboard-dkms (<= 2.0.0), tuxedo-wmi-dkms (<= 1.5.1), tuxedo-xp-xc-touchpad-key-fix, tuxedo-touchpad-fix (<= 1.0.8), tuxedo-xp-xc-airplane-mode-fix (<= 0.6), tuxedo-cc-wmi
+Replaces: tuxedo-keyboard-dkms (<= 2.0.0), tuxedo-wmi-dkms (<= 1.5.1), tuxedo-xp-xc-touchpad-key-fix, tuxedo-touchpad-fix (<= 1.0.8), tuxedo-xp-xc-airplane-mode-fix (<= 0.6), tuxedo-cc-wmi
+Filename: pool/stable/tuxedo-keyboard_3.0.9_all.deb
+Size: 26192
+MD5sum: 0b5f3aebaa0a42705bbe50a02d10118d
+SHA1: bc70b10941f6759711685416a5f999e15360a549
+SHA256: 6a7a96ab56040274d3c58986e2ace4e2631347a62e9b590d974c22bb02e0c6ed
+Section: admin
+Priority: optional
+Homepage: https://www.tuxedocomputers.com
+Description: Keyboard driver for TUXEDO notebooks.
+ Keyboard & keyboard backlight driver for TUXEDO notebooks.
+ Meant for DKMS framework.
+

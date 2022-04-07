@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rm -r /usr/share/coreboot-updater/lib/intel-spi
+rm -r /usr/share/coreboot-updater/libs/intel-spi
 echo "intel-spi folder cleaned."
 rm /usr/share/coreboot-updater/rom/*
 echo "rom folder cleaned."

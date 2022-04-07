@@ -1,0 +1,5 @@
+#!/bin/bash
+
+install_folder=/usr/share/coreboot-updater/libs/intel-spi
+cargo build "$install_folder"
+cargo install --path "$install_folder" && echo "intel-spi installed"

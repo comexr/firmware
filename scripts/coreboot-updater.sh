@@ -33,6 +33,7 @@ else
     -u|--update)
       	echo "starting update..."
       	rom_foler=/usr/share/coreboot-updater/rom
+      	spi_folder=/usr/share/coreboot-updater/libs/intel-spi
 	wget -O /tmp/firmware_$DMI_MODEL.rom https://github.com/comexr/firmware/raw/main/models/"$DMI_MODEL"/firmware.rom &>/dev/null || { echo "Model not found, please contact support"; rm /tmp/firmware_$DMI_MODEL.rom; exit 1; }
 	[ $? -ne 0 ] && { echo "Something went wrong, aborting"; exit 1; }
 	diff /tmp/firmware_$DMI_MODEL.rom "$rom_folder"/firmware_$DMI_MODEL.rom
@@ -51,8 +52,8 @@ else
    		exit 1
 	fi
 	
-	sudo chmod +x /usr/share/coreboot-updater/libs/intel-spi/target/release/intel-spi
-	sudo /usr/share/coreboot-updater/libs/intel-spi/target/release/intel-spi "$rom_folder/firmware_$DMI_MODEL.rom"
+	sudo chmod +x "$spi_folder"/target/release/intel-spi
+	sudo "$spi_folder"/target/release/intel-spi "$rom_folder/firmware_$DMI_MODEL.rom"
 	echo "Firmware updated!"
 	echo "Please reboot your system"
 	exit 0

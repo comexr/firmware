@@ -1,0 +1,4 @@
+#!/bin/bash
+
+rm /usr/share/coreboot-updater/rom/*
+echo "rom folder cleaned."

@@ -1,0 +1,13 @@
+Package: coreboot-updater
+Version: 0.0.11
+Architecture: amd64
+Maintainer: Laurens Bruins <l.bruins@laptopwithlinux.com>
+Depends: libc6, dmidecode, cargo
+Filename: pool/testing/coreboot-updater_0.0.11-1_amd64.deb
+Size: 16732
+MD5sum: 5172de1ba7843783fbbfe470dc1bcfc2
+SHA1: 19041d2c2723acb3e3e574cd1be78c785f7ce945
+SHA256: 45c25d136db3523cb3b805dbfdb9de8a95dcd3739729fd32a7ac59d2d2695316
+Homepage: http://laptopwithlinux.com/
+Description: A Coreboot update tool
+

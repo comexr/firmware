@@ -2,4 +2,4 @@
 
 install_folder=/usr/share/coreboot-updater/libs/intel-spi
 cd "$install_folder"
-cargo install --path . && echo "intel-spi installed"
+cargo +nightly-2021-06-15 install --path . && echo "intel-spi installed"

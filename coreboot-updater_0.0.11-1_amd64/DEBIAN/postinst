@@ -2,6 +2,7 @@
 
 install_folder=/usr/share/coreboot-updater/libs/intel-spi
 cd "$install_folder"
+$HOME/.cargo/env
 rustup override set nightly
 cargo build "$install_folder" &>/dev/null
 cargo install --path . && echo "intel-spi installed"

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-deb-systemd-helper enable 'ltr-fix.service' >/dev/null || true
-deb-systemd-helper update-state 'ltr-fix.service' >/dev/null || true
+deb-systemd-helper enable 'pmc-ltr-ignore.service' >/dev/null || true
+deb-systemd-helper update-state 'pmc-ltr-ignore.service' >/dev/null || true
 systemctl --system daemon-reload >/dev/null || true
-deb-systemd-invoke restart 'ltr-fix.service' >/dev/null || true
+deb-systemd-invoke restart 'pmc-ltr-ignore.service' >/dev/null || true

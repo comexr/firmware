@@ -11,3 +11,17 @@ SHA256: 45c25d136db3523cb3b805dbfdb9de8a95dcd3739729fd32a7ac59d2d2695316
 Homepage: http://laptopwithlinux.com/
 Description: A Coreboot update tool
 
+Package: ltr-fix
+Source: ltr-fix
+Version: 0.0.1
+Architecture: amd64
+Maintainer: Laurens Bruins <l.bruins@laptopwithlinux.com>
+Depends: libc6, systemd, init
+Filename: pool/testing/ltr-fix_0.0.1-1_amd64.deb
+Size: 1196
+MD5sum: 713a55d166cd686f17c91fc231458427
+SHA1: 990d1fd75dcd5e277eaba2344a16e69f5f9bd6b7
+SHA256: 8b243a940acbf7e22f57a97179ff595fe1131148ab2d80ccfe9e6b09f0b349a6
+Homepage: http://laptopwithlinux.com/
+Description: Fix for the Clevo NL51MU battery life
+

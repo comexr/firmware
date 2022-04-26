@@ -1,0 +1,8 @@
+Package: ltr-fix
+Source: ltr-fix
+Version: 0.0.2
+Maintainer: Laurens Bruins <l.bruins@laptopwithlinux.com>
+Depends: libc6, systemd, init, dmidecode
+Architecture: amd64
+Homepage: http://laptopwithlinux.com/
+Description: Fix for the Clevo NL51MU battery life

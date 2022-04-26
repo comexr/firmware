@@ -1,0 +1,24 @@
+#!/bin/bash
+wget -O /tmp/ltr-blacklist https://github.com/comexr/firmware/raw/main/ltr-blacklist &>/dev/null
+dmi_model=$(dmidecode -s system-product-name)
+dmi_model=${dmi_model#"Clevo "}
+dmi_model=${dmi_model,,}
+dmi_model=${dmi_model:0:2}${dmi_model:4:1}
+while read p; do
+	#nuc catch
+	if [ -z "${p##NUC*}" ]; then
+		p=${p:0:5}
+	else
+		p=${p:0:2}${p:4:1}
+	fi
+	if [[ "$p" =~ .*"$dmi_model".* ]]; then
+		echo "Blacklisted model"
+		deb-systemd-helper stop 'pmc-ltr-ignore.service' >/dev/null || true
+		deb-systemd-helper disable 'pmc-ltr-ignore.service' >/dev/null || true
+		rm /lib/systemd/system/pmc-ltr-ignore.service
+		systemctl --system daemon-reload >/dev/null || true
+		exit 0
+	fi
+done < /tmp/ltr-blacklist
+echo "Model not in blacklist, resuming"
+exit 0

@@ -16,12 +16,12 @@ Source: ltr-fix
 Version: 0.0.2
 Architecture: amd64
 Maintainer: Laurens Bruins <l.bruins@laptopwithlinux.com>
-Depends: libc6, systemd, init, dmidecode
+Depends: libc6, init
 Filename: pool/testing/ltr-fix_0.0.2-1_amd64.deb
-Size: 1620
-MD5sum: 9d82c0e73599d62c0ee070863a93dc33
-SHA1: 618585c0d7d64bf883c26aad657725a5509d8a05
-SHA256: 1d1175bcd3a4fd08a0359dcb4f89fc88aab691ed2373e3cac08fd03e38d7e9b8
+Size: 1176
+MD5sum: aad2f5736d60250c2cdcdec6bdf282ad
+SHA1: 237034c39b0d4947452a3ac9fe4e35db257859da
+SHA256: 009a14d19757869e451c339f031e91538e1b864e5ca3667889d037f00a5936bc
 Homepage: http://laptopwithlinux.com/
-Description: Fix for the Clevo NL51MU battery life
+Description: Fix for battery life on multiple Clevo models
 

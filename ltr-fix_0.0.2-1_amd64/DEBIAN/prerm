@@ -1,5 +1,3 @@
 #!/bin/bash
 
-deb-systemd-helper stop 'pmc-ltr-ignore.service' >/dev/null || true
-deb-systemd-helper disable 'pmc-ltr-ignore.service' >/dev/null || true
-systemctl --system daemon-reload >/dev/null || true
+crontab -l | grep -v '@reboot /usr/share/ltr-fix/ltr-startup.sh' | crontab -

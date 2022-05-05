@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "@reboot /usr/share/ltr-fix/ltr-startup.sh" | crontab -
+(crontab -l; echo "@reboot /usr/share/ltr-fix/ltr-startup.sh") | crontab -

@@ -19,9 +19,9 @@ Maintainer: Laurens Bruins <l.bruins@laptopwithlinux.com>
 Depends: libc6, init
 Filename: pool/testing/ltr-fix_0.0.2-1_amd64.deb
 Size: 1176
-MD5sum: aad2f5736d60250c2cdcdec6bdf282ad
-SHA1: 237034c39b0d4947452a3ac9fe4e35db257859da
-SHA256: 009a14d19757869e451c339f031e91538e1b864e5ca3667889d037f00a5936bc
+MD5sum: 0e46741981761341bb728184aea1a78a
+SHA1: cb766cc842c49f9aeb7de901ffcd6bc4d1a744f5
+SHA256: e2eebeb210e04aa07edc16a4516a7ffc1192f80324f2fafc4d3c3a040e97fdcd
 Homepage: http://laptopwithlinux.com/
 Description: Fix for battery life on multiple Clevo models
 

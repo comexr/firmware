@@ -4,10 +4,10 @@ Architecture: amd64
 Maintainer: Laurens Bruins <l.bruins@laptopwithlinux.com>
 Depends: libc6
 Filename: pool/testing/clevo-fan-control_0.0.1-1_amd64.deb
-Size: 7684
-MD5sum: 349d9bea16f66b57b762e695b8c468d7
-SHA1: fbe02beefd442fa00a74ca84f97ef4e41e899865
-SHA256: 444505b10856a769232ba17ef8dd974957037078b7f47e946e5507de695fc710
+Size: 7712
+MD5sum: d1672fdc429c4e664273aa51414bd1f4
+SHA1: 9c90041bf38334a9f337098e075dc184c3c77d15
+SHA256: 14f2f00bff027288e2776f73c452aeae05f6e07b5b3e9d369c73facaa208f254
 Homepage: http://laptopwithlinux.com/
 Description: Fan driver for Clevo notebooks with loud default fans
 

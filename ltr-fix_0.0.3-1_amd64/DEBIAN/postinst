@@ -1,0 +1,13 @@
+#!/bin/bash
+
+deb-systemd-helper enable 'pmc-ltr-ignore.service' >/dev/null || true
+deb-systemd-helper update-state 'pmc-ltr-ignore.service' >/dev/null || true
+systemctl --system daemon-reload >/dev/null || true
+deb-systemd-invoke restart 'pmc-ltr-ignore.service' >/dev/null || true
+
+if [ $(dmidecode | grep "Product") = *"NJx0MU"* ]; then
+	# Set 2 & 8 to ignore instead of 1
+	/lib/systemd/system/
+else
+	# Keep 1
+fi

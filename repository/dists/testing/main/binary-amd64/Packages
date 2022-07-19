@@ -1,3 +1,16 @@
+Package: clevo-fan-control
+Version: 0.0.1
+Architecture: amd64
+Maintainer: Laurens Bruins <l.bruins@laptopwithlinux.com>
+Depends: libc6
+Filename: pool/testing/clevo-fan-control_0.0.1-1_amd64.deb
+Size: 7686
+MD5sum: afb3ed676975a96e8967a4ff22918e1a
+SHA1: 1922bff94b87a963a01fd3c07284685deb39cd2d
+SHA256: f45b79aa25236a6dc56aebf5b2696bf8f84446cb183646c190c70dfa901a4185
+Homepage: http://laptopwithlinux.com/
+Description: Fan driver for Clevo notebooks with loud default fans
+
 Package: coreboot-updater
 Version: 0.0.11
 Architecture: amd64

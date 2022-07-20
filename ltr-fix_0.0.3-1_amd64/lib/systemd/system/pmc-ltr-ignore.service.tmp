@@ -1,9 +1,0 @@
-[Unit]
-Description = "Ignore LTR due to firmware bug"
-
-[Service]
-ExecStart=/usr/bin/sh -c 'echo 1 > /sys/kernel/debug/pmc_core/ltr_ignore'
-Type=idle
-
-[Install]
-WantedBy=multi-user.target

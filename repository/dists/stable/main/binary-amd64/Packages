@@ -1,13 +1,26 @@
+Package: comexr-fan-control
+Version: 0.0.1
+Architecture: amd64
+Maintainer: Laurens Bruins <l.bruins@laptopwithlinux.com>
+Depends: libc6
+Filename: pool/stable/comexr-fan-control_0.0.1-1_amd64.deb
+Size: 7722
+MD5sum: 41cedbcb7c51d5e9c935fb19620f9e70
+SHA1: eff57f6cdd40504cd32d0a97e76302a0f6201487
+SHA256: 88166165ab71cb6aa0688af2f062d8bf73e8e0d75b8b5765a046ca40435be677
+Homepage: https://github.com/comexr/comexr-fan-control
+Description: Fan driver for Clevo notebooks with loud default fans
+
 Package: comexr-fan-control-he
 Version: 0.0.1
 Architecture: amd64
 Maintainer: Laurens Bruins <l.bruins@laptopwithlinux.com>
 Depends: libc6
 Filename: pool/stable/comexr-fan-control-he_0.0.1-1_amd64.deb
-Size: 7750
-MD5sum: 91a7e48c4ffd1b5241baeb7d167ef31b
-SHA1: 676b42df81116de2ace14ef42b25c7a7676df61a
-SHA256: 7c6e0c620bbdbff19d4c572526c39b43643352dd722f77077235ae82d9b64002
+Size: 7748
+MD5sum: ba22e08aa9c1087293d837c25567cb20
+SHA1: 533d15928e19b8f440288f248403f67651567e24
+SHA256: bb56a547f245fd07ee3e4680e2fe141c286181b35644c6e59565b180ed41f57c
 Homepage: https://github.com/comexr/comexr-fan-control-he
 Description: Fan driver for high end Clevo notebooks with loud default fans
 

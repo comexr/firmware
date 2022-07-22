@@ -6,19 +6,19 @@ Version: 1.0
 Architectures: amd64 
 Components: main
 Description: Official Laptop with Linux repository
-Date: Fri, 22 Jul 2022 10:53:13 +0000
+Date: Fri, 22 Jul 2022 11:06:52 +0000
 MD5Sum:
- 4b1b95ecb0adfe16fa6d52454c76957f 2016 InRelease
- d2728a1fe486c112266f166ea2a13901 874 Release.gpg
- eb4e4cd724a958bac2ddaf1c61f841f0 1127 main/binary-amd64/Packages.gz
- 88e897a271e7ec1194ee12a11be4f05f 2901 main/binary-amd64/Packages
+ 0f417ad8e0bb24f468f17cb65fcebe80 2016 InRelease
+ b652053237c35f1dce94c8ca7518f384 874 Release.gpg
+ cfd6f821b41513ab3809768bad2cd9ab 1129 main/binary-amd64/Packages.gz
+ 88ca484bcadaf7adf3aa5d1fceb06230 2901 main/binary-amd64/Packages
 SHA1:
- e0842d95b83cb49dff76dbf8168d8c49da345c8c 2016 InRelease
- 1d2a43b937f371bd6c9ccb70eb5665bb40d9e824 874 Release.gpg
- 82b1506d8abfa3c2e465c3a9694c465c9a71f554 1127 main/binary-amd64/Packages.gz
- 272b4e23121ff9fdeaf0760bbc6b6b91ac91d79b 2901 main/binary-amd64/Packages
+ 66df2e8786fa9c4537bb9efae68181c84cf0dfb0 2016 InRelease
+ 23ade64c2b302a9f7f1ce339b4eaed0b3ad88618 874 Release.gpg
+ fa206f6e73e0eceb43129dbd9816303f2bdaef20 1129 main/binary-amd64/Packages.gz
+ c47496a8c1d12e78e6bdec2f1551bb4878f4a947 2901 main/binary-amd64/Packages
 SHA256:
- 94758a1e99c65cbc42095929ee8fb4818334b8e9803f8a125dd5957dd7dc9fd0 2016 InRelease
- bcbdf3937fd9a7eb0af700d54de8eb18a8d88c46147d9f09ced333068c49ab62 874 Release.gpg
- 71696c2d1620fc67ae9f3793cf0b1f34a2c16946cc2806cbe4a7ae7414137689 1127 main/binary-amd64/Packages.gz
- 2f41551da9d74ed1dd0bf2bdba3acc4fa4f9fdcf1eb42586392d8b054dcd58bf 2901 main/binary-amd64/Packages
+ da15f1c1aabe97db28caa1d78ef99c3f740ea85421282007e352d205a3e12bd7 2016 InRelease
+ 440c5e860c3e9e03792bda598fc84d302cae678ab4a68b86f68adcc6c4f9b8e4 874 Release.gpg
+ 4d30ad3866777b6ce5f7a7b0749cbdb201220ca4baa43bef25da0ef87e268c21 1129 main/binary-amd64/Packages.gz
+ 9ba7806a7d7c6ce829c98443650d0b587c5539c89c3db4f4676a375dfcfec90a 2901 main/binary-amd64/Packages

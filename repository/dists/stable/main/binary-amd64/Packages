@@ -18,9 +18,9 @@ Maintainer: Laurens Bruins <l.bruins@laptopwithlinux.com>
 Depends: libc6
 Filename: pool/stable/comexr-fan-control-he_0.0.1-1_amd64.deb
 Size: 7748
-MD5sum: ba22e08aa9c1087293d837c25567cb20
-SHA1: 533d15928e19b8f440288f248403f67651567e24
-SHA256: bb56a547f245fd07ee3e4680e2fe141c286181b35644c6e59565b180ed41f57c
+MD5sum: 03c513ec8c80a445bbb1f240b19ca26f
+SHA1: 1500310f1def98c1854a23f82d4ef0a531d10e6d
+SHA256: 309f9c81a5f5d3560986a93133875e920efe176fcd5dec1d67902045c13cd586
 Homepage: https://github.com/comexr/comexr-fan-control-he
 Description: Fan driver for high end Clevo notebooks with loud default fans
 

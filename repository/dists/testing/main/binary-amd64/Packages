@@ -11,6 +11,19 @@ SHA256: 14f2f00bff027288e2776f73c452aeae05f6e07b5b3e9d369c73facaa208f254
 Homepage: http://laptopwithlinux.com/
 Description: Fan driver for Clevo notebooks with loud default fans
 
+Package: comexr-fan-control
+Version: 0.0.2
+Architecture: amd64
+Maintainer: Laurens Bruins <l.bruins@laptopwithlinux.com>
+Depends: libc6
+Filename: pool/testing/comexr-fan-control_0.0.2-1_amd64.deb
+Size: 8134
+MD5sum: b0f129900bf769544e3a55897f3ccbb6
+SHA1: efe64f96792f7a93e5184b45032e01685caff517
+SHA256: 8786188380aa14a309ec34d8737322df92c9b4f4cc9808a16843ced509d9a17a
+Homepage: https://github.com/comexr/comexr-fan-control
+Description: Fan driver for Clevo notebooks with loud default fans
+
 Package: coreboot-updater
 Version: 0.0.11
 Architecture: amd64

@@ -71,3 +71,20 @@ Description: Keyboard driver for TUXEDO notebooks.
  Keyboard & keyboard backlight driver for TUXEDO notebooks.
  Meant for DKMS framework.
 
+Package: tuxedo-keyboard-ite
+Version: 0.2.3
+Architecture: all
+Maintainer: TUXEDO Computers GmbH <tux@tuxedocomputers.com>
+Depends: dkms (>= 1.95)
+Filename: pool/stable/tuxedo-keyboard-ite_0.2.3_all.deb
+Size: 12804
+MD5sum: 60f8c34f6e7042eac8e7c321c0f69569
+SHA1: 50d40284e33c35395584aeb616bd7f9fcbf6e290
+SHA256: 0815eb9f28ba5a789db05ce197233e8818088b1b09d38d86b0e23e48d6144064
+Section: admin
+Priority: optional
+Homepage: https://www.tuxedocomputers.com
+Description: Keyboard back-light driver for ITE devices
+ USB HID driver for ITE devices on TUXEDO laptops.
+ This module provides back-light control for ITE Device(829x).
+

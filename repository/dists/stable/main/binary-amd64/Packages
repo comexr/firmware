@@ -45,6 +45,44 @@ Description: Keyboard driver for TUXEDO notebooks.
  Keyboard & keyboard backlight driver for TUXEDO notebooks.
  Meant for DKMS framework.
 
+Package: tuxedo-keyboard
+Version: 3.1.4
+Architecture: all
+Maintainer: TUXEDO Computers GmbH <tux@tuxedocomputers.com>
+Depends: dkms (>= 1.95)
+Conflicts: tuxedo-keyboard-dkms (<= 2.0.0), tuxedo-wmi-dkms (<= 1.5.1), tuxedo-xp-xc-touchpad-key-fix, tuxedo-touchpad-fix (<= 1.0.8), tuxedo-xp-xc-airplane-mode-fix (<= 0.6), tuxedo-cc-wmi
+Replaces: tuxedo-keyboard-dkms (<= 2.0.0), tuxedo-wmi-dkms (<= 1.5.1), tuxedo-xp-xc-touchpad-key-fix, tuxedo-touchpad-fix (<= 1.0.8), tuxedo-xp-xc-airplane-mode-fix (<= 0.6), tuxedo-cc-wmi
+Filename: pool/stable/tuxedo-keyboard_3.1.4_all.deb
+Size: 30828
+MD5sum: dddffa0c2aeae49b33dd75ac25ba7f56
+SHA1: 1d0403e30b689e4520db1d37803d1926af85fc1c
+SHA256: 99e985198ac144accb1552f3795310f46750527fb86f5e760bd6871a794de528
+Section: admin
+Priority: optional
+Homepage: https://www.tuxedocomputers.com
+Description: Keyboard driver for TUXEDO notebooks.
+ Keyboard & keyboard backlight driver for TUXEDO notebooks.
+ Meant for DKMS framework.
+
+Package: tuxedo-keyboard
+Version: 3.2.1
+Architecture: all
+Maintainer: TUXEDO Computers GmbH <tux@tuxedocomputers.com>
+Depends: dkms (>= 1.95)
+Conflicts: tuxedo-keyboard-dkms (<= 2.0.0), tuxedo-wmi-dkms (<= 1.5.1), tuxedo-xp-xc-touchpad-key-fix, tuxedo-touchpad-fix (<= 1.0.8), tuxedo-xp-xc-airplane-mode-fix (<= 0.6), tuxedo-cc-wmi
+Replaces: tuxedo-keyboard-dkms (<= 2.0.0), tuxedo-wmi-dkms (<= 1.5.1), tuxedo-xp-xc-touchpad-key-fix, tuxedo-touchpad-fix (<= 1.0.8), tuxedo-xp-xc-airplane-mode-fix (<= 0.6), tuxedo-cc-wmi
+Filename: pool/stable/tuxedo-keyboard_3.2.1_all.deb
+Size: 31864
+MD5sum: 03504f2a28e5d31b50d7797de1f51586
+SHA1: 653fd50791d9d2a4aeedd4d3d60e9f983cd33837
+SHA256: 0e33a1b42e814df515b4a6ea5c8b4a40200dd538adfdc63cfbf9d6d40ac23bf8
+Section: admin
+Priority: optional
+Homepage: https://www.tuxedocomputers.com
+Description: Keyboard driver for TUXEDO notebooks.
+ Keyboard & keyboard backlight driver for TUXEDO notebooks.
+ Meant for DKMS framework.
+
 Package: tuxedo-keyboard-ite
 Version: 0.2.3
 Architecture: all
@@ -55,6 +93,40 @@ Size: 12804
 MD5sum: 60f8c34f6e7042eac8e7c321c0f69569
 SHA1: 50d40284e33c35395584aeb616bd7f9fcbf6e290
 SHA256: 0815eb9f28ba5a789db05ce197233e8818088b1b09d38d86b0e23e48d6144064
+Section: admin
+Priority: optional
+Homepage: https://www.tuxedocomputers.com
+Description: Keyboard back-light driver for ITE devices
+ USB HID driver for ITE devices on TUXEDO laptops.
+ This module provides back-light control for ITE Device(829x).
+
+Package: tuxedo-keyboard-ite
+Version: 0.2.5
+Architecture: all
+Maintainer: TUXEDO Computers GmbH <tux@tuxedocomputers.com>
+Depends: dkms (>= 1.95)
+Filename: pool/stable/tuxedo-keyboard-ite_0.2.5_all.deb
+Size: 13104
+MD5sum: b775f321db7fd15cd7f76599ba212990
+SHA1: 49e9214d8a5533796b03475a96513dbd7962ab12
+SHA256: 7a60de3b131c3b7f6d3f574c23b68686ced07ba39ba4ee46925d92bab8be5ef7
+Section: admin
+Priority: optional
+Homepage: https://www.tuxedocomputers.com
+Description: Keyboard back-light driver for ITE devices
+ USB HID driver for ITE devices on TUXEDO laptops.
+ This module provides back-light control for ITE Device(829x).
+
+Package: tuxedo-keyboard-ite
+Version: 0.3.0
+Architecture: all
+Maintainer: TUXEDO Computers GmbH <tux@tuxedocomputers.com>
+Depends: dkms (>= 1.95)
+Filename: pool/stable/tuxedo-keyboard-ite_0.3.0_all.deb
+Size: 13452
+MD5sum: 7d843c6d262f2ba0cfbbf64b588c1a21
+SHA1: b24e25f9b90fed98e54127a67b914d4c2ba707f4
+SHA256: 8914de92ea8f2b28a80ae89951729441516a3a6f4bdbc30c216ba61cf811a8f5
 Section: admin
 Priority: optional
 Homepage: https://www.tuxedocomputers.com

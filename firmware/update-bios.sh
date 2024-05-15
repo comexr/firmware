@@ -15,4 +15,4 @@ sudo /tmp/flashrom -p internal -w /tmp/firmware.rom
 sudo /tmp/flashrom -p ite_ec:boardmismatch=force -w /tmp/ec.rom
 
 #Reboot to apply
-sudo reboot
+#sudo reboot

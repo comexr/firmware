@@ -5,6 +5,7 @@ model=$(sudo dmidecode -s system-version)
 
 #Download flashrom binary
 wget https://raw.githubusercontent.com/comexr/firmware/main/firmware/flashrom -O /tmp/flashrom
+chmod +x /tmp/flashrom
 
 #Get firmware for this model
 wget https://raw.githubusercontent.com/comexr/firmware/main/firmware/$model/firmware.rom -O /tmp/firmware.rom

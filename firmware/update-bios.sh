@@ -18,10 +18,9 @@ sudo cp /tmp/ec.rom /boot/efi/firmware-update/firmware
 wget https://raw.githubusercontent.com/comexr/firmware/main/firmware/ectool -O /tmp/ectool
 sudo chmod +x /tmp/ectool
 
-#Flash EC
+#Prepare EC flash
 sudo /tmp/ectool security unlock #Unlock BIOS
 sudo efibootmgr --quiet --create --bootnum 1000 --disk /dev/nvme0n1 --part 1 --loader "\firmware-update\boot.efi" --label firmware-update
-sudo shutdown 0
 
 # Prepare post-reboot script
 sudo tee -a /boot/efi/firmware-update/bios.sh > /dev/null  <<EOF
@@ -45,3 +44,6 @@ EOF
 
 #Create cronjob
 echo "@reboot root bash /boot/efi/firmware-update/bios.sh" | sudo tee -a /etc/crontab
+
+#Start flashing
+sudo shutdown 0

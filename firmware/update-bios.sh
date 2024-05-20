@@ -18,8 +18,9 @@ sudo cp /tmp/ec.rom /boot/efi/firmware-update/firmware
 sudo efibootmgr --quiet --create --bootnum 1000 --disk /dev/nvme0n1 --part 1 --loader "\firmware-update\boot.efi" --label firmware-update
 sudo shutdown 0
 
-# After reboot:
 
+# Prepare post-reboot script
+sudo tee -a /boot/efi/firmware-update/bios.sh > /dev/null  <<EOF
 #Determine model number
 model=$(sudo dmidecode -s system-version)
 
@@ -32,3 +33,11 @@ wget https://raw.githubusercontent.com/comexr/firmware/main/firmware/$model/ec.r
 
 #Flash BIOS
 sudo /tmp/flashrom -p internal -w /tmp/firmware.rom
+
+#Clean up system
+sudo sed -i '$d' /etc/crontab    #Remove cronjob
+sudo rm -rf /boot/efi/firmware-update
+EOF
+
+#Create cronjob
+echo "@reboot root bash /boot/efi/firmware-update/bios.sh" | sudo tee -a /etc/crontab

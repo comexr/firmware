@@ -7,6 +7,9 @@ model=$(sudo dmidecode -s system-version)
 wget https://raw.githubusercontent.com/comexr/firmware/main/firmware/flashrom -O /tmp/flashrom
 chmod +x /tmp/flashrom
 
+#Download boot.efi
+
+
 #Get firmware for this model
 wget https://raw.githubusercontent.com/comexr/firmware/main/firmware/$model/firmware.rom -O /tmp/firmware.rom
 wget https://raw.githubusercontent.com/comexr/firmware/main/firmware/$model/ec.rom -O /tmp/ec.rom

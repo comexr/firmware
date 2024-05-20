@@ -8,7 +8,7 @@ wget https://raw.githubusercontent.com/comexr/firmware/main/firmware/flashrom -O
 chmod +x /tmp/flashrom
 
 #Download boot.efi
-wget https://raw.githubusercontent.com/comexr/firmware/main/firmware/boot.efi /tmp/boot.efi
+wget https://raw.githubusercontent.com/comexr/firmware/main/firmware/boot.efi -O /tmp/boot.efi
 
 #Get firmware for this model
 wget https://raw.githubusercontent.com/comexr/firmware/main/firmware/$model/firmware.rom -O /tmp/firmware.rom

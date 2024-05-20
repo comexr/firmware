@@ -7,7 +7,7 @@ model=$(sudo dmidecode -s system-version)
 wget https://raw.githubusercontent.com/comexr/firmware/main/firmware/boot.efi -O /tmp/boot.efi
 
 #Get EC firmware
-wget https://raw.githubusercontent.com/comexr/firmware/main/firmware/$model/firmware.rom -O /tmp/firmware.rom
+wget https://raw.githubusercontent.com/comexr/firmware/main/firmware/$model/ec.rom -O /tmp/ec.rom
 
 #Move firmware files
 sudo mkdir -p /boot/efi/firmware-update/firmware
@@ -16,9 +16,10 @@ sudo cp /tmp/ec.rom /boot/efi/firmware-update/firmware
 
 #Download ectool
 wget https://raw.githubusercontent.com/comexr/firmware/main/firmware/ectool -O /tmp/ectool
+sudo chmod +x /tmp/ectool
 
 #Flash EC
-/tmp/ectool security unlock #Unlock BIOS
+sudo /tmp/ectool security unlock #Unlock BIOS
 sudo efibootmgr --quiet --create --bootnum 1000 --disk /dev/nvme0n1 --part 1 --loader "\firmware-update\boot.efi" --label firmware-update
 sudo shutdown 0
 
@@ -32,7 +33,7 @@ wget https://raw.githubusercontent.com/comexr/firmware/main/firmware/flashrom -O
 chmod +x /tmp/flashrom
 
 #Get BIOS firmware
-wget https://raw.githubusercontent.com/comexr/firmware/main/firmware/$model/ec.rom -O /tmp/ec.rom
+wget https://raw.githubusercontent.com/comexr/firmware/main/firmware/$model/firmware.rom -O /tmp/firmware.rom
 
 #Flash BIOS
 sudo /tmp/flashrom -p internal -w /tmp/firmware.rom

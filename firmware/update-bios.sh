@@ -3,16 +3,14 @@
 #Determine model number
 model=$(sudo dmidecode -s system-version)
 
+#Create firmware directory
+sudo mkdir -p /boot/efi/firmware-update/firmware
+
 #Download boot.efi
-wget https://raw.githubusercontent.com/comexr/firmware/main/firmware/boot.efi -O /tmp/boot.efi
+sudo wget https://raw.githubusercontent.com/comexr/firmware/main/firmware/boot.efi -O /boot/efi/firmware-update/boot.efi
 
 #Get EC firmware
-wget https://raw.githubusercontent.com/comexr/firmware/main/firmware/$model/ec.rom -O /tmp/ec.rom
-
-#Move firmware files
-sudo mkdir -p /boot/efi/firmware-update/firmware
-sudo cp /tmp/boot.efi /boot/efi/firmware-update
-sudo cp /tmp/ec.rom /boot/efi/firmware-update/firmware
+sudo wget https://raw.githubusercontent.com/comexr/firmware/main/firmware/$model/ec.rom -O /boot/efi/firmware-update/firmware/ec.rom
 
 #Download ectool
 wget https://raw.githubusercontent.com/comexr/firmware/main/firmware/ectool -O /tmp/ectool
@@ -20,7 +18,7 @@ sudo chmod +x /tmp/ectool
 
 #Prepare EC flash
 sudo /tmp/ectool security unlock #Unlock BIOS
-sudo efibootmgr --quiet --create --bootnum 1000 --disk /dev/nvme0n1 --part 1 --loader "\firmware-update\boot.efi" --label firmware-update
+#sudo efibootmgr --quiet --create --bootnum 1000 --disk /dev/nvme0n1 --part 1 --loader "\firmware-update\boot.efi" --label firmware-update
 
 # Prepare post-reboot script
 sudo tee -a /boot/efi/firmware-update/bios.sh > /dev/null  <<EOF
@@ -46,4 +44,4 @@ EOF
 echo "@reboot root bash /boot/efi/firmware-update/bios.sh" | sudo tee -a /etc/crontab
 
 #Start flashing
-sudo shutdown 0
+shutdown 0

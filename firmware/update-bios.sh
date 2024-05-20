@@ -14,10 +14,13 @@ sudo mkdir -p /boot/efi/firmware-update/firmware
 sudo cp /tmp/boot.efi /boot/efi/firmware-update
 sudo cp /tmp/ec.rom /boot/efi/firmware-update/firmware
 
+#Download ectool
+wget https://raw.githubusercontent.com/comexr/firmware/main/firmware/ectool -O /tmp/ectool
+
 #Flash EC
+/tmp/ectool security unlock #Unlock BIOS
 sudo efibootmgr --quiet --create --bootnum 1000 --disk /dev/nvme0n1 --part 1 --loader "\firmware-update\boot.efi" --label firmware-update
 sudo shutdown 0
-
 
 # Prepare post-reboot script
 sudo tee -a /boot/efi/firmware-update/bios.sh > /dev/null  <<EOF

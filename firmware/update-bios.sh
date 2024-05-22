@@ -1,5 +1,19 @@
 #!/bin/bash
 
+#Install dependencies
+if command -v apt >/dev/null 2>&1; then
+  # Debian-based distributions (Debian, Ubuntu)
+  sudo apt install -y libhidapi-dev
+elif command -v dnf >/dev/null 2>&1; then
+  # Fedora
+  sudo dnf install -y hidapi
+elif command -v zypper >/dev/null 2>&1; then
+  # openSUSE
+elif command -v pacman >/dev/null 2>&1; then
+  # Arch-based distributions (Manjaro)
+  #sudo pacman --no-confirm -S <dependencies>
+fi
+
 #Determine model number
 model=$(sudo dmidecode -s system-version)
 

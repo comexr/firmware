@@ -3,45 +3,39 @@
 #Determine model number
 model=$(sudo dmidecode -s system-version)
 
-#Create firmware directory
-sudo mkdir -p /boot/efi/firmware-update/firmware
+#Create firmware update directory
+sudo mkdir -p /opt/firmware-update
 
-#Download boot.efi
-sudo wget https://raw.githubusercontent.com/comexr/firmware/main/firmware/boot.efi -O /boot/efi/firmware-update/boot.efi
+#Get firmware (BIOS and EC)
+sudo wget https://raw.githubusercontent.com/comexr/firmware/main/firmware/$model/firmware.rom -O /opt/firmware-update/firmware.rom
+sudo wget https://raw.githubusercontent.com/comexr/firmware/main/firmware/$model/ec.rom -O /opt/firmware-update/ec.rom
 
-#Get EC firmware
-sudo wget https://raw.githubusercontent.com/comexr/firmware/main/firmware/$model/ec.rom -O /boot/efi/firmware-update/firmware/ec.rom
-
-#Download ectool
-wget https://raw.githubusercontent.com/comexr/firmware/main/firmware/ectool -O /tmp/ectool
-sudo chmod +x /tmp/ectool
-
-#Prepare EC flash
-sudo /tmp/ectool security unlock #Unlock BIOS
-#sudo efibootmgr --quiet --create --bootnum 1000 --disk /dev/nvme0n1 --part 1 --loader "\firmware-update\boot.efi" --label firmware-update
-
-# Prepare post-reboot script
-sudo tee -a /boot/efi/firmware-update/bios.sh > /dev/null  <<EOF
-#Determine model number
-model=$(sudo dmidecode -s system-version)
+#Download ectool (+ make executable)
+sudo wget https://raw.githubusercontent.com/comexr/firmware/main/firmware/ectool -O /opt/firmware-update/ectool
+sudo chmod +x /opt/firmware-update/ectool
 
 #Download flashrom binary (+ make executable)
-wget https://raw.githubusercontent.com/comexr/firmware/main/firmware/flashrom -O /tmp/flashrom
-chmod +x /tmp/flashrom
+sudo wget https://raw.githubusercontent.com/comexr/firmware/main/firmware/flashrom -O /opt/firmware-update/flashrom
+sudo chmod +x /opt/firmware-update/flashrom
 
-#Get BIOS firmware
-wget https://raw.githubusercontent.com/comexr/firmware/main/firmware/$model/firmware.rom -O /tmp/firmware.rom
-
+# Prepare post-reboot script
+sudo tee -a /opt/firmware-update/bios.sh > /dev/null  <<EOF
 #Flash BIOS
-sudo /tmp/flashrom -p internal -w /tmp/firmware.rom
+sudo /opt/firmware-update/flashrom -p internal -w /opt/firmware-update/firmware.rom
+
+#Flash EC
+sudo /opt/firmware-update/ectool flash /opt/firmware-update/ec.rom
 
 #Clean up system
-sudo sed -i '$d' /etc/crontab    #Remove cronjob
-sudo rm -rf /boot/efi/firmware-update
+sudo sed -i '/firmware-update/d' /etc/crontab   #Remove cronjob
+sudo rm -rf /opt/firmware-update
 EOF
 
 #Create cronjob
-echo "@reboot root bash /boot/efi/firmware-update/bios.sh" | sudo tee -a /etc/crontab
+echo "@reboot root bash /opt/firmware-update/bios.sh" | sudo tee -a /etc/crontab
+
+#Unlock BIOS
+sudo /opt/firmware-update/ectool security unlock
 
 #Start flashing
 shutdown 0

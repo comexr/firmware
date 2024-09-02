@@ -6,6 +6,7 @@ The following models are supported:
 - NS50AU
 - NS70AU
 - L141AU
+- PE60RNE
 
 The laptops **needs** to run coreboot already, any attempt to flash a non-coreboot device with this firmware will fail.
 

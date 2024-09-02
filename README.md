@@ -18,7 +18,7 @@ curl https://raw.githubusercontent.com/comexr/firmware/main/firmware/update-bios
 3. The device will reboot and ask you to type over the pin it displays. This is a safety measure to make sure you have physical access to the device.
 4. After filling in the code and pressing enter the laptop will boot into your OS. If you hear the fan spinning up the flashing process has started. Don't touch your laptop during this firmware update.
 5. If the update has been completed the laptop will turn itself off and you can turn it back on by pressing the power button. To check if the update succeeded, press ESC during boot and note the number after `Version:`.
-   Currently the newest version is: `2024-05-20`
+   Currently the newest version is: `2024-07-30`
 
 ## First-time flashers (only for the L141AU)
 If you have a L141AU and are going to flash it for the first time, you should first transition it, based on the keyboard layout. 

@@ -11,7 +11,7 @@ elif command -v zypper >/dev/null 2>&1; then
   sudo zypper install -y libhidapi-devel
 elif command -v pacman >/dev/null 2>&1; then
   # Arch-gebaseerde distributies (Manjaro)
-  sudo pacman --noconfirm -S hidapi
+  sudo pacman --noconfirm -Sy hidapi
 fi
 
 #Determine model number

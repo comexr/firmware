@@ -7,6 +7,7 @@ The following models are supported:
 - NS70AU
 - L141AU
 - PE60RNE
+- V560TU
 
 The laptops **needs** to run coreboot already, any attempt to flash a non-coreboot device with this firmware will fail.
 

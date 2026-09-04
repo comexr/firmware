@@ -2,7 +2,7 @@
 
 if command -v apt >/dev/null 2>&1; then
   # Debian-gebaseerde distributies (Debian, Ubuntu)
-  sudo apt install -y libhidapi-dev
+  sudo apt install -y libhidapi-dev libftdi1-2
 elif command -v dnf >/dev/null 2>&1; then
   # Fedora
   sudo dnf install -y hidapi-devel
@@ -35,7 +35,7 @@ sudo chmod +x /opt/firmware-update/flashrom
 # Prepare post-reboot script
 sudo tee -a /opt/firmware-update/bios.sh > /dev/null  <<EOF
 #Flash BIOS
-sudo /opt/firmware-update/flashrom -p internal -w /opt/firmware-update/firmware.rom
+sudo /opt/firmware-update/flashrom -p internal --ifd -i bios -w /opt/firmware-update/firmware.rom
 
 #Flash EC
 sudo /opt/firmware-update/ectool flash /opt/firmware-update/ec.rom
